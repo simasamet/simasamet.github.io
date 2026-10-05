@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="utf-8">
     <title>Binair stelsel</title>
 
-    <!-- Dit koppelt de CSS aan deze HTML-pagina -->
+    <!-- Hiermee koppel ik het CSS-bestand aan deze pagina -->
     <link rel="stylesheet" type="text/css" href="opmaak.css">
 </head>
 
@@ -16,54 +17,88 @@
         <p>Uitleg over het binaire stelsel</p>
     </header>
 
-    <!-- Het menu staat op iedere pagina -->
+    <!-- Hetzelfde menu staat op iedere pagina -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="binairstelsel.html">Binair stelsel</a></li>
-            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+
+            <!-- Link naar de homepage -->
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <!-- Dropdownmenu -->
+            <li class="dropdown">
+                <a href="#">Onderwerpen ▼</a>
+
+                <ul class="dropdown-inhoud">
+
+                    <li>
+                        <a href="binairstelsel.html">Binair stelsel</a>
+                    </li>
+
+                    <li>
+                        <a href="kleurmodellen.html">Kleurmodellen</a>
+                    </li>
+
+                </ul>
+            </li>
+
         </ul>
     </nav>
 
-    <!-- De inhoud van deze pagina -->
+    <!-- De inhoud van de pagina -->
     <main>
+
         <h2>Wat is het binaire stelsel?</h2>
 
         <p>
-            Het binaire stelsel is een talstelsel dat gebruikmaakt van
-            slechts twee cijfers: 0 en 1.
+            Het binaire stelsel is een talstelsel dat gebruikmaakt
+            van slechts twee cijfers: 0 en 1.
         </p>
 
         <p>
-            Computers werken met het binaire stelsel. Een computer kan
-            bijvoorbeeld twee verschillende toestanden herkennen:
-            aan en uit. Deze toestanden kunnen worden weergegeven als
-            1 en 0.
+            Computers gebruiken het binaire stelsel om informatie
+            te verwerken. Een computer werkt namelijk met elektrische
+            signalen die aan of uit kunnen staan.
         </p>
 
-        <h2>Voorbeeld</h2>
+        <h2>De cijfers 0 en 1</h2>
 
         <p>
-            Het getal 5 kan in het binaire stelsel worden geschreven als
-            101.
+            In het binaire stelsel wordt een 0 gebruikt voor uit
+            en een 1 voor aan. Met combinaties van nullen en enen
+            kunnen computers allerlei soorten informatie opslaan.
+        </p>
+
+        <h2>Een voorbeeld</h2>
+
+        <p>
+            Het gewone getal 5 kan worden geschreven als 101 in
+            het binaire stelsel.
         </p>
 
         <p>
-            Dit komt doordat:
-            1 × 4 + 0 × 2 + 1 × 1 = 5.
+            Dit kun je controleren met:
         </p>
 
-        <!-- Afbeelding bij het onderwerp -->
+        <p class="voorbeeld">
+            1 × 4 + 0 × 2 + 1 × 1 = 5
+        </p>
+
+        <!-- Afbeelding over het binaire stelsel -->
         <img class="onderwerp-afbeelding"
-             src="afbeeldingen/images-2.jpeg"
-             alt="Afbeelding over het binaire stelsel">
+             src="afbeeldingen/binair.jpg"
+             alt="Een afbeelding over het binaire stelsel">
+
     </main>
 
+    <!-- Voettekst -->
     <footer>
         <p>Mijn informatica website</p>
     </footer>
 
 </body>
 </html>
+
 
   

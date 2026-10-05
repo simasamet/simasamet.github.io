@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="utf-8">
     <title>Kleurmodellen</title>
 
-    <!-- Dit koppelt de CSS aan deze HTML-pagina -->
+    <!-- Hiermee koppel ik het CSS-bestand aan deze pagina -->
     <link rel="stylesheet" type="text/css" href="opmaak.css">
 </head>
 
@@ -16,45 +17,80 @@
         <p>Uitleg over verschillende kleurmodellen</p>
     </header>
 
-    <!-- Het menu van de website -->
+    <!-- Het navigatiemenu -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="binairstelsel.html">Binair stelsel</a></li>
-            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+
+            <!-- Link naar de homepage -->
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <!-- Dropdownmenu -->
+            <li class="dropdown">
+                <a href="#">Onderwerpen ▼</a>
+
+                <ul class="dropdown-inhoud">
+
+                    <li>
+                        <a href="binairstelsel.html">Binair stelsel</a>
+                    </li>
+
+                    <li>
+                        <a href="kleurmodellen.html">Kleurmodellen</a>
+                    </li>
+
+                </ul>
+            </li>
+
         </ul>
     </nav>
 
     <!-- De inhoud van de pagina -->
     <main>
+
         <h2>Wat zijn kleurmodellen?</h2>
 
         <p>
-            Een kleurmodel is een manier om kleuren te beschrijven
-            met behulp van verschillende kleuren of waarden.
+            Een kleurmodel is een manier om kleuren te beschrijven.
+            Kleurmodellen worden bijvoorbeeld gebruikt bij computers,
+            beeldschermen, camera's en printers.
         </p>
 
         <h2>RGB</h2>
 
         <p>
             Een bekend kleurmodel is RGB. RGB staat voor Red, Green
-            en Blue. Door rood, groen en blauw in verschillende
-            hoeveelheden te combineren, kunnen veel verschillende
-            kleuren worden gemaakt.
+            en Blue. Dit betekent rood, groen en blauw.
+        </p>
+
+        <p>
+            Door rood, groen en blauw in verschillende hoeveelheden
+            te combineren, kunnen veel verschillende kleuren worden
+            gemaakt.
         </p>
 
         <h2>CMYK</h2>
 
         <p>
-            CMYK wordt vooral gebruikt bij het afdrukken. De letters
-            staan voor Cyan, Magenta, Yellow en Key (zwart).
+            CMYK wordt vooral gebruikt voor het afdrukken van
+            afbeeldingen. CMYK staat voor Cyan, Magenta, Yellow
+            en Key (zwart).
         </p>
+
+        <!-- Afbeelding over kleurmodellen -->
+        <img class="onderwerp-afbeelding"
+             src="afbeeldingen/kleuren.jpg"
+             alt="Verschillende kleuren">
+
     </main>
 
+    <!-- Voettekst -->
     <footer>
         <p>Mijn informatica website</p>
     </footer>
 
 </body>
 </html>
+
 

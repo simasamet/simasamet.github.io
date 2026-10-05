@@ -1,11 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="utf-8">
     <title>Informatica - Home</title>
 
-    <!-- Dit koppelt de CSS aan deze HTML-pagina -->
+    <!-- Hiermee koppel ik het CSS-bestand aan deze pagina -->
     <link rel="stylesheet" type="text/css" href="opmaak.css">
 </head>
 
@@ -13,40 +13,63 @@
 
     <!-- Dit is de bovenkant van de website -->
     <header>
-        <h1>Informatica</h1>
+        <h1>Mijn informatica website</h1>
         <p>Welkom op mijn website over het binaire stelsel en kleurmodellen.</p>
     </header>
 
-    <!-- Dit is het menu van de website -->
+    <!-- Dit is het navigatiemenu -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="binairstelsel.html">Binair stelsel</a></li>
-            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+
+            <!-- Link naar de homepage -->
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <!-- Dit is het dropdownmenu -->
+            <li class="dropdown">
+                <a href="#">Onderwerpen ▼</a>
+
+                <!-- Dit menu wordt zichtbaar als je er met de muis overheen gaat -->
+                <ul class="dropdown-inhoud">
+
+                    <li>
+                        <a href="binairstelsel.html">Binair stelsel</a>
+                    </li>
+
+                    <li>
+                        <a href="kleurmodellen.html">Kleurmodellen</a>
+                    </li>
+
+                </ul>
+            </li>
+
         </ul>
     </nav>
 
     <!-- Dit is de belangrijkste inhoud van de homepage -->
     <main>
+
         <h2>Welkom!</h2>
 
         <p>
-            Op deze website leg ik uit wat het binaire stelsel is
-            en wat kleurmodellen zijn.
+            Op deze website vertel ik meer over het binaire stelsel
+            en verschillende kleurmodellen.
         </p>
 
         <p>
-            Gebruik het menu hierboven om naar de verschillende pagina's
-            te gaan.
+            Gebruik het menu hierboven om naar de verschillende
+            onderwerpen te gaan.
         </p>
 
         <!-- Afbeelding op de homepage -->
         <img class="homepage-afbeelding"
-             src="afbeeldingen/boeken-stapel-realistisch.avif"
-             alt="Een stapel boeken">
+             src="afbeeldingen/computer.jpg"
+             alt="Een computer">
+
     </main>
 
-    <!-- Voettekst van de website -->
+    <!-- Dit is de onderkant van de website -->
     <footer>
         <p>Mijn informatica website</p>
     </footer>

@@ -1,27 +1,219 @@
-ul}
+/* =========================================
+   ALGEMENE OPMAAK
+   ========================================= */
+
+/* De achtergrond en standaardtekst van de website */
+body {
+    background-color: #fce4ec;
+    color: #4a3540;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+/* De bovenkant van iedere pagina */
+header {
+    background-color: #f8bbd0;
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* De grote titel */
+h1 {
+    color: #6d4055;
+    margin: 0 0 10px 0;
+}
+
+
+/* De kleinere titels */
+h2 {
+    color: #9b5875;
+}
+
+
+/* =========================================
+   MENU
+   ========================================= */
+
+/* De achtergrond van het menu */
+nav {
+    background-color: #d98aaa;
+}
+
+
+/* De lijst van het hoofdmenu */
+nav > ul {
     list-style-type: none;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 
-}
-body {
-  background-color: lightblue;
-}
+    /* Hierdoor staan Home en Onderwerpen naast elkaar */
+    display: flex;
 
-h1 {
-  color: white;
-  text-align: center;
+    /* Het menu staat in het midden */
+    justify-content: center;
 }
 
+
+/* Ieder onderdeel van het menu */
+nav li {
+    position: relative;
+}
+
+
+/* De links van het menu */
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: bold;
+}
+
+
+/* Kleur wanneer je met de muis over een menu-link gaat */
+nav a:hover {
+    background-color: #b96789;
+}
+
+
+/* =========================================
+   DROPDOWNMENU
+   ========================================= */
+
+/* Het dropdownmenu is standaard verborgen */
+.dropdown-inhoud {
+    display: none;
+
+    /* Het menu komt onder het hoofdmenu */
+    position: absolute;
+
+    background-color: #d98aaa;
+
+    /* Breedte van het dropdownmenu */
+    min-width: 200px;
+
+    padding: 0;
+    margin: 0;
+
+    /* Het menu komt boven andere elementen te staan */
+    z-index: 10;
+}
+
+
+/* Het dropdownmenu verschijnt wanneer je eroverheen gaat */
+.dropdown:hover .dropdown-inhoud {
+    display: block;
+}
+
+
+/* De onderdelen van het dropdownmenu */
+.dropdown-inhoud li {
+    width: 100%;
+}
+
+
+/* De links in het dropdownmenu */
+.dropdown-inhoud a {
+    padding: 12px 18px;
+}
+
+
+/* Hoverkleur van de dropdownlinks */
+.dropdown-inhoud a:hover {
+    background-color: #b96789;
+}
+
+
+/* =========================================
+   HOOFDINHOUD
+   ========================================= */
+
+/* Het witte vlak waarin de tekst staat */
+main {
+    background-color: #fff7fa;
+
+    /* Maximale breedte */
+    max-width: 900px;
+
+    /* Zet het vlak in het midden */
+    margin: 30px auto;
+
+    /* Ruimte rondom de tekst */
+    padding: 30px;
+
+    /* Afgeronde hoeken */
+    border-radius: 15px;
+
+    /* Lichte schaduw */
+    box-shadow: 0 4px 12px rgba(100, 50, 70, 0.15);
+}
+
+
+/* Tekst in paragrafen */
 p {
-  font-family: verdana;
-  font-size: 20px;
+    font-size: 17px;
+    line-height: 1.6;
 }
-</style>
-</head>
-<body>
 
-<h1>My First CSS Example</h1>
-<p>This is a paragraph.</p>
 
-</body>
+/* =========================================
+   AFBEELDINGEN
+   ========================================= */
+
+/* Afbeelding op de homepage */
+.homepage-afbeelding {
+    display: block;
+
+    width: 250px;
+    height: auto;
+
+    /* Afbeelding in het midden */
+    margin: 25px auto;
+
+    /* Afgeronde hoeken */
+    border-radius: 12px;
+}
+
+
+/* Afbeeldingen op de onderwerp-pagina's */
+.onderwerp-afbeelding {
+    display: block;
+
+    max-width: 400px;
+    height: auto;
+
+    /* Afbeelding in het midden */
+    margin: 25px auto;
+
+    border-radius: 12px;
+}
+
+
+/* Voorbeeld van een binaire berekening */
+.voorbeeld {
+    background-color: #f8d5e2;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+/* De onderkant van de website */
+footer {
+    background-color: #f8bbd0;
+    color: #6d4055;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
