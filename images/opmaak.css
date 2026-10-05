@@ -1,6 +1,110 @@
-ul{
+/* Algemene opmaak van de hele website */
+body {
+    background-color: #fce4ec;
+    color: #4a3540;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+}
+
+/* De bovenkant van iedere pagina */
+header {
+    background-color: #f8bbd0;
+    text-align: center;
+    padding: 30px;
+}
+
+/* De grote titel */
+h1 {
+    color: #6d4055;
+    margin-bottom: 10px;
+}
+
+/* De kleinere titels */
+h2 {
+    color: #9b5875;
+}
+
+/* Het navigatiemenu */
+nav {
+    background-color: #d98aaa;
+    padding: 0;
+}
+
+/* De lijst met menu-items */
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 
+    /* Hierdoor komen de menu-items naast elkaar */
+    display: flex;
+
+    /* Menu wordt in het midden geplaatst */
+    justify-content: center;
+}
+
+/* Ieder onderdeel van het menu */
+nav li {
+    margin: 0;
+}
+
+/* De links in het menu */
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: bold;
+}
+
+/* Wat er gebeurt als je met de muis over een link gaat */
+nav a:hover {
+    background-color: #b96789;
+}
+
+/* De belangrijkste inhoud van de pagina */
+main {
+    background-color: #fff7fa;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+
+    /* Afgeronde hoeken */
+    border-radius: 15px;
+
+    /* Een lichte schaduw rond het witte vlak */
+    box-shadow: 0 4px 12px rgba(100, 50, 70, 0.15);
+}
+
+/* Paragrafen */
+p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* Afbeelding op de homepage */
+.homepage-afbeelding {
+    display: block;
+    width: 180px;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 12px;
+}
+
+/* Afbeelding op de pagina over het binaire stelsel */
+.onderwerp-afbeelding {
+    display: block;
+    max-width: 300px;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 12px;
+}
+
+/* De voettekst */
+footer {
+    background-color: #f8bbd0;
+    color: #6d4055;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
 }
